@@ -52,7 +52,7 @@ $excerpt .= '...';
             echo '
             <div>
             <a href="' . $link . '" class="button lpfw_single_button" title="' . $hashtag->name .'">
-            ' . $hashtag->name . '
+            #' . $hashtag->name . '
             </a>
             </div>';
         }
