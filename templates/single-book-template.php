@@ -153,13 +153,13 @@ $excerpt .= '...';
                 <?php if($available == __('Available', 'library-plugin')) { ?>
 
                 <svg class="lpfw_block_available_left_icon lpfw_block_available_left_icon_available">
-                    <use xlink:href='<?php echo plugin_dir_url( __FILE__ ) ?>/public/image/sprite.svg#icon-checkmark'></use>
+                    <use xlink:href='<?php echo plugin_dir_url( __FILE__ ) ?>public/image/sprite.svg#icon-checkmark'></use>
                 </svg>
                 <?php
                 } else {
                     ?>
                     <svg class="lpfw_block_available_left_icon lpfw_block_available_left_icon_not_available">
-                    <use xlink:href='<?php echo plugin_dir_url( __FILE__ ) ?>/public/image/sprite.svg#icon-cross'></use>
+                    <use xlink:href='<?php echo plugin_dir_url( __FILE__ ) ?>public/image/sprite.svg#icon-cross'></use>
                     </svg>
                     <?php } ?>
             </div>

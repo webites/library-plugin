@@ -124,3 +124,76 @@
     font-size: larger;
     text-align: justify;
 }
+
+.lpfw_archive_item{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    border: 3px solid;
+    position: relative;
+
+}
+
+.lpfw_archive_item_available{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 1rem 1.2rem;
+    text-align: right;
+}
+
+.lpfw_archive_item_image{
+    width: 30%;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+.lpfw_archive_item_image img{
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.lpfw_archive_item_details{
+    padding: 2rem;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.lpfw_archive_item_details p {
+    width: 75%;
+    padding: 2rem 0;
+}
+
+.lpfw_archive_short_details{
+    font-weight: 700;
+    padding-bottom: 1rem;
+
+}
+
+.lpfw_archive_short_details > *{
+    display: inline-block;
+}
+
+.lpfw_archive_short_details > *:not(:last-child):after{
+    content: " ⚬ ";
+    padding: 0 1rem;
+
+}
+
+.lpfw_archive_pagination_left{
+    padding: 2rem;
+    text-align: center;
+}
+
+.lpfw_archive_pagination_right{
+    padding: 2rem;
+    text-align: center;
+}
