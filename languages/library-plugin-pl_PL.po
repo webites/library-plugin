@@ -3,9 +3,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Library plugin 1.1.1\n"
+"Project-Id-Version: Library Plugin 1.1.1\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2021-07-09 13:12+0100\n"
+"POT-Creation-Date: 2021-07-09 13:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Łukasz Gołabek <lgolabek@outlook.com>\n"
 "Language-Team: weBites\n"

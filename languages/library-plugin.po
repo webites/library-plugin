@@ -1,0 +1,351 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Library Plugin 1.1.1\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2021-07-09 13:21+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Łukasz Gołabek <lgolabek@outlook.com>\n"
+"Language-Team: weBites\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: library-plugin.php:31
+msgctxt "Post type general name"
+msgid "Books"
+msgstr ""
+
+#: library-plugin.php:32
+msgctxt "Post type singular name"
+msgid "Book"
+msgstr ""
+
+#: library-plugin.php:33
+msgctxt "Admin Menu text"
+msgid "Books"
+msgstr ""
+
+#: library-plugin.php:34
+msgctxt "Add New on Toolbar"
+msgid "Book"
+msgstr ""
+
+#: library-plugin.php:35
+msgid "Add New"
+msgstr ""
+
+#: library-plugin.php:36
+msgid "Add New Book"
+msgstr ""
+
+#: library-plugin.php:37
+msgid "New Book"
+msgstr ""
+
+#: library-plugin.php:38
+msgid "Edit Book"
+msgstr ""
+
+#: library-plugin.php:39
+msgid "View Book"
+msgstr ""
+
+#: library-plugin.php:40
+msgid "All Books"
+msgstr ""
+
+#: library-plugin.php:41
+msgid "Search Books"
+msgstr ""
+
+#: library-plugin.php:42
+msgid "Parent Books:"
+msgstr ""
+
+#: library-plugin.php:43
+msgid "No books found."
+msgstr ""
+
+#: library-plugin.php:44
+msgid "No books found in Trash."
+msgstr ""
+
+#: library-plugin.php:45
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Book Cover Image"
+msgstr ""
+
+#: library-plugin.php:46
+msgctxt ""
+"Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set cover image"
+msgstr ""
+
+#: library-plugin.php:47
+msgctxt ""
+"Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
+msgid "Remove cover image"
+msgstr ""
+
+#: library-plugin.php:48
+msgctxt ""
+"Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
+msgid "Use as cover image"
+msgstr ""
+
+#: library-plugin.php:49
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Book archives"
+msgstr ""
+
+#: library-plugin.php:50
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into book"
+msgstr ""
+
+#: library-plugin.php:51
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this book"
+msgstr ""
+
+#: library-plugin.php:52
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter books list"
+msgstr ""
+
+#: library-plugin.php:53
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Books list navigation"
+msgstr ""
+
+#: library-plugin.php:54
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Books list"
+msgstr ""
+
+#: library-plugin.php:86
+msgctxt "taxonomy general name"
+msgid "Books categories"
+msgstr ""
+
+#: library-plugin.php:87
+msgctxt "taxonomy singular name"
+msgid "Books category"
+msgstr ""
+
+#: library-plugin.php:88
+msgid "Search books Categories"
+msgstr ""
+
+#: library-plugin.php:89
+msgid "All books Categories"
+msgstr ""
+
+#: library-plugin.php:90
+msgid "Parent books category"
+msgstr ""
+
+#: library-plugin.php:91
+msgid "Parent books Category:"
+msgstr ""
+
+#: library-plugin.php:92
+msgid "Edit books category"
+msgstr ""
+
+#: library-plugin.php:93
+msgid "Update books category"
+msgstr ""
+
+#: library-plugin.php:94
+msgid "Add New Books category"
+msgstr ""
+
+#: library-plugin.php:95
+msgid "New Books Category Name"
+msgstr ""
+
+#: library-plugin.php:96
+msgid "Books Category"
+msgstr ""
+
+#: library-plugin.php:115
+msgctxt "taxonomy general name"
+msgid "Hashtags"
+msgstr ""
+
+#: library-plugin.php:116
+msgctxt "taxonomy singular name"
+msgid "Hashtag"
+msgstr ""
+
+#: library-plugin.php:117
+msgid "Search Hashtags"
+msgstr ""
+
+#: library-plugin.php:118
+msgid "Popular Hashtags"
+msgstr ""
+
+#: library-plugin.php:119
+msgid "All Hashtags"
+msgstr ""
+
+#: library-plugin.php:122
+msgid "Edit Hashtag"
+msgstr ""
+
+#: library-plugin.php:123
+msgid "Update Hashtag"
+msgstr ""
+
+#: library-plugin.php:124
+msgid "Add New Hashtag"
+msgstr ""
+
+#: library-plugin.php:125
+msgid "New Hashtag Name"
+msgstr ""
+
+#: library-plugin.php:126
+msgid "Separate Hashtag with commas"
+msgstr ""
+
+#: library-plugin.php:127
+msgid "Add or remove Hashtag"
+msgstr ""
+
+#: library-plugin.php:128
+msgid "Choose from the most used Hashtag"
+msgstr ""
+
+#: library-plugin.php:129
+msgid "No Hashtag found."
+msgstr ""
+
+#: library-plugin.php:130
+msgid "Hashtag"
+msgstr ""
+
+#: library-plugin.php:206
+msgid "Book parameters"
+msgstr ""
+
+#: library-plugin.php:238 templates/single-book-template.php:102
+msgid "ISBN"
+msgstr ""
+
+#: library-plugin.php:241 templates/single-book-template.php:103
+msgid "Author"
+msgstr ""
+
+#: library-plugin.php:244 templates/single-book-template.php:104
+msgid "Publishing house"
+msgstr ""
+
+#: library-plugin.php:247 templates/single-book-template.php:105
+msgid "Series"
+msgstr ""
+
+#: library-plugin.php:250 templates/single-book-template.php:106
+msgid "Type"
+msgstr ""
+
+#: library-plugin.php:253 templates/single-book-template.php:107
+msgid "Publication date"
+msgstr ""
+
+#: library-plugin.php:256
+msgid "Pages"
+msgstr ""
+
+#: library-plugin.php:259 templates/single-book-template.php:109
+msgid "Format"
+msgstr ""
+
+#: library-plugin.php:262 templates/category-book-template.php:46
+#: templates/hashtags-book-template.php:46
+#: templates/single-book-template.php:97
+#: templates/single-book-template.php:110
+#: templates/single-book-template.php:153
+msgid "Available"
+msgstr ""
+
+#: templates/category-book-template.php:5
+msgid "Book category"
+msgstr ""
+
+#: templates/category-book-template.php:48
+#: templates/hashtags-book-template.php:48
+#: templates/single-book-template.php:99
+msgid "Not available"
+msgstr ""
+
+#: templates/category-book-template.php:60
+#: templates/hashtags-book-template.php:60
+msgid "pages"
+msgstr ""
+
+#: templates/category-book-template.php:75
+#: templates/hashtags-book-template.php:75
+msgid "Read more"
+msgstr ""
+
+#: templates/category-book-template.php:82
+#: templates/hashtags-book-template.php:82
+msgid "Older books"
+msgstr ""
+
+#: templates/category-book-template.php:83
+#: templates/hashtags-book-template.php:83
+msgid "Newer books"
+msgstr ""
+
+#: templates/hashtags-book-template.php:5
+msgid "Book hashtag"
+msgstr ""
+
+#: templates/single-book-template.php:19
+msgid "Books Categories"
+msgstr ""
+
+#: templates/single-book-template.php:35
+msgid "Book have no category"
+msgstr ""
+
+#: templates/single-book-template.php:44
+msgid "Hashtags"
+msgstr ""
+
+#: templates/single-book-template.php:60
+msgid "Book have no hashtags"
+msgstr ""
+
+#: templates/single-book-template.php:108
+msgid "Number of pages"
+msgstr ""
