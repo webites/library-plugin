@@ -83,15 +83,15 @@ $excerpt .= '...';
         <?php 
         $id = get_the_ID();
 
-        $isbn = get_post_meta( $id, 'isbn', true );
-        $author = get_post_meta( $post->ID, 'author', true );
-        $publishing_house = get_post_meta( $post->ID, 'publishing_house', true );
-        $series = get_post_meta( $post->ID, 'series', true );
-        $type = get_post_meta( $post->ID, 'type', true );
-        $publication_date = get_post_meta( $post->ID, 'publication_date', true );
-        $pages = get_post_meta( $post->ID, 'pages', true );
-        $format = get_post_meta( $post->ID, 'format', true );
-        $available = get_post_meta( $post->ID, 'available', true );
+        $isbn = get_post_meta( $id, 'lpfw_book_isbn', true );
+        $author = get_post_meta( $post->ID, 'lpfw_book_author', true );
+        $publishing_house = get_post_meta( $post->ID, 'lpfw_book_publishing_house', true );
+        $series = get_post_meta( $post->ID, 'lpfw_book_series', true );
+        $type = get_post_meta( $post->ID, 'lpfw_book_type', true );
+        $publication_date = get_post_meta( $post->ID, 'lpfw_book_publication_date', true );
+        $pages = get_post_meta( $post->ID, 'lpfw_book_pages', true );
+        $format = get_post_meta( $post->ID, 'lpfw_book_format', true );
+        $available = get_post_meta( $post->ID, 'lpfw_book_available', true );
 
         if(!empty($available)) {
             $available = __('Available', 'library-plugin');

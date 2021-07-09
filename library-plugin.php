@@ -75,6 +75,9 @@ add_action('wp_enqueue_scripts', 'lpfw_plugin_add_style', PHP_INT_MAX);
  
 add_action( 'init', 'lpfw_register_custom_post_type_book' );
 
+// end register post type
+
+
 // register category taxonomy
 
 function lpfw_register_taxonomy_of_books() {
@@ -143,6 +146,12 @@ function lpfw_register_taxonomy_of_books() {
 add_action( 'init', 'lpfw_register_taxonomy_of_books', 0 );
 
 
+// end register category and hashtag tax
+
+
+
+// PLUGIN TEMPLATES
+
 // single post - book - template
 
 
@@ -151,11 +160,39 @@ add_filter( 'single_template', 'lpfw_single_book_page_template' );
 function lpfw_single_book_page_template( $page_template )
 {
     if ( is_singular( 'book') ) {
-        $page_template = dirname( __FILE__ ) . '/single-book-template.php';
+        $page_template = dirname( __FILE__ ) . '/templates/single-book-template.php';
     }
     return $page_template;
 }
 
+// end single post templates
+
+// category template
+
+add_filter( "taxonomy_template", 'lpfw_category_book_page_template');
+function lpfw_category_book_page_template ($tax_template) {
+  if (is_tax('book-category')) {
+    $tax_template = dirname(  __FILE__  ) . '/templates/category-book-template.php';
+  }
+  return $tax_template;
+}
+
+//end category templates
+
+// hashtags template
+
+add_filter( "taxonomy_template", 'lpfw_hashtags_book_page_template');
+function lpfw_hashtags_book_page_template ($tax_template) {
+  if (is_tax('book-hashtags')) {
+    $tax_template = dirname(  __FILE__  ) . '/templates/hashtags-book-template.php';
+  }
+  return $tax_template;
+}
+
+//end hashtags templates
+
+
+// END TEMPLATES
 
 // custom fields
 
@@ -182,47 +219,47 @@ function lpfw_display_table_with_options( $post ) {
 
     
 
-    $isbn = get_post_meta( $post->ID, 'isbn', true );
-    $author = get_post_meta( $post->ID, 'author', true );
-    $publishing_house = get_post_meta( $post->ID, 'publishing_house', true );
-    $series = get_post_meta( $post->ID, 'series', true );
-    $type = get_post_meta( $post->ID, 'type', true );
-    $publication_date = get_post_meta( $post->ID, 'publication_date', true );
-    $pages = get_post_meta( $post->ID, 'pages', true );
-    $format = get_post_meta( $post->ID, 'format', true );
-    $available = get_post_meta( $post->ID, 'available', true );
+    $isbn = get_post_meta( $post->ID, 'lpfw_book_isbn', true );
+    $author = get_post_meta( $post->ID, 'lpfw_book_author', true );
+    $publishing_house = get_post_meta( $post->ID, 'lpfw_book_publishing_house', true );
+    $series = get_post_meta( $post->ID, 'lpfw_book_series', true );
+    $type = get_post_meta( $post->ID, 'lpfw_book_type', true );
+    $publication_date = get_post_meta( $post->ID, 'lpfw_book_publication_date', true );
+    $pages = get_post_meta( $post->ID, 'lpfw_book_pages', true );
+    $format = get_post_meta( $post->ID, 'lpfw_book_format', true );
+    $available = get_post_meta( $post->ID, 'lpfw_book_available', true );
     // Display code/markup goes here. Don't forget to include nonces!
     ?>
     <p>
     <div class="wrap">
     <form action="/" method="post">
 
-        <label for="isbn"><?php _e( 'ISBN', 'library-plugin'); ?></label><BR>
-        <input type="text" id="isbn" name="isbn" value="<?php echo $isbn; ?>"><BR><BR>
+        <label for="lpfw_book_isbn"><?php _e( 'ISBN', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_isbn" name="lpfw_book_isbn" value="<?php echo $isbn; ?>"><BR><BR>
 
-        <label for="author"><?php _e( 'Author', 'library-plugin'); ?></label><BR>
-        <input type="text" id="author" name="author" value="<?php echo $author; ?>"><BR><BR>
+        <label for="lpfw_book_author"><?php _e( 'Author', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_author" name="lpfw_book_author" value="<?php echo $author; ?>"><BR><BR>
         
-        <label for="publishing_house"><?php _e( 'Publishing house', 'library-plugin'); ?></label><BR>
-        <input type="text" id="publishing_house" name="publishing_house" value="<?php echo $publishing_house; ?>"><BR><BR>
+        <label for="lpfw_book_publishing_house"><?php _e( 'Publishing house', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_publishing_house" name="lpfw_book_publishing_house" value="<?php echo $publishing_house; ?>"><BR><BR>
 
-        <label for="series"><?php _e( 'Series', 'library-plugin'); ?></label><BR>
-        <input type="text" id="series" name="series" value="<?php echo $series; ?>"><BR><BR>
+        <label for="lpfw_book_series"><?php _e( 'Series', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_series" name="lpfw_book_series" value="<?php echo $series; ?>"><BR><BR>
 
-        <label for="type"><?php _e( 'Type', 'library-plugin'); ?></label><BR>
-        <input type="text" id="type" name="type" value="<?php echo $type; ?>"><BR><BR>
+        <label for="lpfw_book_type"><?php _e( 'Type', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_type" name="lpfw_book_type" value="<?php echo $type; ?>"><BR><BR>
         
-        <label for="publication_date"><?php _e( 'Publication date', 'library-plugin'); ?></label><BR>
-        <input type="text" id="publication_date" name="publication_date" value="<?php echo $publication_date; ?>"><BR><BR>
+        <label for="lpfw_book_publication_date"><?php _e( 'Publication date', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_publication_date" name="lpfw_book_publication_date" value="<?php echo $publication_date; ?>"><BR><BR>
         
-        <label for="pages"><?php _e( 'Pages', 'library-plugin'); ?></label><BR>
-        <input type="text" id="pages" name="pages" value="<?php echo $pages; ?>"><BR><BR>
+        <label for="lpfw_book_pages"><?php _e( 'Pages', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_pages" name="lpfw_book_pages" value="<?php echo $pages; ?>"><BR><BR>
         
-        <label for="format"><?php _e( 'Format', 'library-plugin'); ?></label><BR>
-        <input type="text" id="format" name="format" value="<?php echo $format; ?>"><BR><BR>
+        <label for="lpfw_book_format"><?php _e( 'Format', 'library-plugin'); ?></label><BR>
+        <input type="text" id="lpfw_book_format" name="lpfw_book_format" value="<?php echo $format; ?>"><BR><BR>
 
-        <label for="available"><?php _e( 'Available', 'library-plugin'); ?></label>
-        <input type="checkbox" id="available" name="available" <?php if($available) { echo 'CHECKED'; } ?>><BR><BR>
+        <label for="lpfw_book_available"><?php _e( 'Available', 'library-plugin'); ?></label>
+        <input type="checkbox" id="lpfw_book_available" name="lpfw_book_available" <?php if($available) { echo 'CHECKED'; } ?>><BR><BR>
 
 
         <?php submit_button(); ?>
@@ -240,31 +277,31 @@ function lpfw_display_table_with_options( $post ) {
 function lpfw_save_meta_after_click_save_button( $post_id ) {
     // Save logic goes here. Don't forget to include nonce checks!
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $isbn = sanitize_text_field( $_POST['isbn'] );
-        $author = sanitize_text_field( $_POST['author'] );
-        $publishing_house = sanitize_text_field( $_POST['publishing_house'] );
-        $series = sanitize_text_field( $_POST['series'] );
-        $type = sanitize_text_field( $_POST['type'] );
-        $publication_date = sanitize_text_field( $_POST['publication_date'] );
-        $pages = sanitize_text_field( $_POST['pages'] );
-        $format = sanitize_text_field( $_POST['format'] );
-        $available = sanitize_text_field( $_POST['available'] );
+        $isbn = sanitize_text_field( $_POST['lpfw_book_isbn'] );
+        $author = sanitize_text_field( $_POST['lpfw_book_author'] );
+        $publishing_house = sanitize_text_field( $_POST['lpfw_book_publishing_house'] );
+        $series = sanitize_text_field( $_POST['lpfw_book_series'] );
+        $type = sanitize_text_field( $_POST['lpfw_book_type'] );
+        $publication_date = sanitize_text_field( $_POST['lpfw_book_publication_date'] );
+        $pages = sanitize_text_field( $_POST['lpfw_book_pages'] );
+        $format = sanitize_text_field( $_POST['lpfw_book_format'] );
+        $available = sanitize_text_field( $_POST['lpfw_book_available'] );
 
 
-        update_post_meta( $post_id, 'isbn', $isbn );
-        update_post_meta( $post_id, 'author', $author );
-        update_post_meta( $post_id, 'publishing_house', $publishing_house );
-        update_post_meta( $post_id, 'series', $series );
-        update_post_meta( $post_id, 'type', $type );
-        update_post_meta( $post_id, 'publication_date', $publication_date );
-        update_post_meta( $post_id, 'pages', $pages );
-        update_post_meta( $post_id, 'format', $format );
-        update_post_meta( $post_id, 'available', $available );
+        update_post_meta( $post_id, 'lpfw_book_isbn', $isbn );
+        update_post_meta( $post_id, 'lpfw_book_author', $author );
+        update_post_meta( $post_id, 'lpfw_book_publishing_house', $publishing_house );
+        update_post_meta( $post_id, 'lpfw_book_series', $series );
+        update_post_meta( $post_id, 'lpfw_book_type', $type );
+        update_post_meta( $post_id, 'lpfw_book_publication_date', $publication_date );
+        update_post_meta( $post_id, 'lpfw_book_pages', $pages );
+        update_post_meta( $post_id, 'lpfw_book_format', $format );
+        update_post_meta( $post_id, 'lpfw_book_available', $available );
 }
 }
 add_action( 'save_post', 'lpfw_save_meta_after_click_save_button' );
 
 
-
+// end custom fields
 
 ?>
