@@ -12,7 +12,7 @@ $excerpt .= '...';
 
 ?>
 <article>
-<h1 class="lpfw_header1"><?php echo $title; ?></h1>
+<h1 class="lpfw_header1"><?php echo esc_html($title); ?></h1>
 
 <div class="lpfw_books_categories_block">
     <h3>
@@ -70,7 +70,7 @@ $excerpt .= '...';
         <div class="lpfw_single_excerpt">
 
         <p>
-        <?php echo $excerpt; ?>
+        <?php echo esc_html($excerpt); ?>
         </p>
 
         </div>
@@ -112,35 +112,35 @@ $excerpt .= '...';
         ?>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_isbn . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $isbn ); echo '</span>'; ?>
+        <?php echo esc_html($e_isbn) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $isbn ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_author . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $author ); echo '</span>'; ?>
+        <?php echo esc_html($e_author) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $author ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_publishing_house . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $publishing_house ); echo '</span>'; ?>
+        <?php echo esc_html($e_publishing_house) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $publishing_house ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_series . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $series ); echo '</span>'; ?>
+        <?php echo esc_html($e_series) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $series ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_type . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $type ); echo '</span>'; ?>
+        <?php echo esc_html($e_type) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $type ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_publication_date . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $publication_date ); echo '</span>'; ?>
+        <?php echo esc_html($e_publication_date) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $publication_date ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_pages . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $pages ); echo '</span>'; ?>
+        <?php echo esc_html($e_pages) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $pages ); echo '</span>'; ?>
         </div>
 
         <div class="lpfw_table_of_parameters_single">
-        <?php echo $e_format . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $format ); echo '</span>'; ?>
+        <?php echo esc_html($e_format) . ': <BR><span class="lpfw_table_of_parameters_single_bigger">'; echo esc_html( $format ); echo '</span>'; ?>
         </div>
 
 

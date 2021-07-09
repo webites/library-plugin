@@ -25,268 +25,268 @@ msgstr ""
 #: library-plugin.php:31
 msgctxt "Post type general name"
 msgid "Books"
-msgstr ""
+msgstr "Książki"
 
 #: library-plugin.php:32
 msgctxt "Post type singular name"
 msgid "Book"
-msgstr ""
+msgstr "Książka"
 
 #: library-plugin.php:33
 msgctxt "Admin Menu text"
 msgid "Books"
-msgstr ""
+msgstr "Książka"
 
 #: library-plugin.php:34
 msgctxt "Add New on Toolbar"
 msgid "Book"
-msgstr ""
+msgstr "Książka"
 
 #: library-plugin.php:35
 msgid "Add New"
-msgstr ""
+msgstr "Dodaj nową"
 
 #: library-plugin.php:36
 msgid "Add New Book"
-msgstr ""
+msgstr "Dodaj nową książkę"
 
 #: library-plugin.php:37
 msgid "New Book"
-msgstr ""
+msgstr "Nowa książka"
 
 #: library-plugin.php:38
 msgid "Edit Book"
-msgstr ""
+msgstr "Edytuj książkę"
 
 #: library-plugin.php:39
 msgid "View Book"
-msgstr ""
+msgstr "Wyświetl książkę"
 
 #: library-plugin.php:40
 msgid "All Books"
-msgstr ""
+msgstr "Wszystkie książki"
 
 #: library-plugin.php:41
 msgid "Search Books"
-msgstr ""
+msgstr "Szukaj książek"
 
 #: library-plugin.php:42
 msgid "Parent Books:"
-msgstr ""
+msgstr "Książka rodzic"
 
 #: library-plugin.php:43
 msgid "No books found."
-msgstr ""
+msgstr "Nie znaleziono książek"
 
 #: library-plugin.php:44
 msgid "No books found in Trash."
-msgstr ""
+msgstr "Brak książek w koszu"
 
 #: library-plugin.php:45
 msgctxt ""
 "Overrides the “Featured Image” phrase for this post type. Added in 4.3"
 msgid "Book Cover Image"
-msgstr ""
+msgstr "Okładka książki"
 
 #: library-plugin.php:46
 msgctxt ""
 "Overrides the “Set featured image” phrase for this post type. Added in 4.3"
 msgid "Set cover image"
-msgstr ""
+msgstr "Ustaw okładkę książki"
 
 #: library-plugin.php:47
 msgctxt ""
 "Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
 msgid "Remove cover image"
-msgstr ""
+msgstr "Usuń okładkę ksiażki"
 
 #: library-plugin.php:48
 msgctxt ""
 "Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
 msgid "Use as cover image"
-msgstr ""
+msgstr "Użyj jako okładkę książki"
 
 #: library-plugin.php:49
 msgctxt ""
 "The post type archive label used in nav menus. Default “Post Archives”. "
 "Added in 4.4"
 msgid "Book archives"
-msgstr ""
+msgstr "Archiwum książek"
 
 #: library-plugin.php:50
 msgctxt ""
 "Overrides the “Insert into post”/”Insert into page” phrase (used when "
 "inserting media into a post). Added in 4.4"
 msgid "Insert into book"
-msgstr ""
+msgstr "Wstaw w ksiażkę"
 
 #: library-plugin.php:51
 msgctxt ""
 "Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
 "when viewing media attached to a post). Added in 4.4"
 msgid "Uploaded to this book"
-msgstr ""
+msgstr "Wgraj do tej ksiażki"
 
 #: library-plugin.php:52
 msgctxt ""
 "Screen reader text for the filter links heading on the post type listing "
 "screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
 msgid "Filter books list"
-msgstr ""
+msgstr "Filtruj listę książek"
 
 #: library-plugin.php:53
 msgctxt ""
 "Screen reader text for the pagination heading on the post type listing "
 "screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
 msgid "Books list navigation"
-msgstr ""
+msgstr "Lista książek"
 
 #: library-plugin.php:54
 msgctxt ""
 "Screen reader text for the items list heading on the post type listing "
 "screen. Default “Posts list”/”Pages list”. Added in 4.4"
 msgid "Books list"
-msgstr ""
+msgstr "Lista książek"
 
 #: library-plugin.php:86
 msgctxt "taxonomy general name"
 msgid "Books categories"
-msgstr ""
+msgstr "Kategorie książek"
 
 #: library-plugin.php:87
 msgctxt "taxonomy singular name"
 msgid "Books category"
-msgstr ""
+msgstr "Kategoria książki"
 
 #: library-plugin.php:88
 msgid "Search books Categories"
-msgstr ""
+msgstr "Szukaj kategorii ksiażki"
 
 #: library-plugin.php:89
 msgid "All books Categories"
-msgstr ""
+msgstr "Wszystkie kategorie książek"
 
 #: library-plugin.php:90
 msgid "Parent books category"
-msgstr ""
+msgstr "Nadrzędna kategoria"
 
 #: library-plugin.php:91
 msgid "Parent books Category:"
-msgstr ""
+msgstr "Nadrzędna kategoria"
 
 #: library-plugin.php:92
 msgid "Edit books category"
-msgstr ""
+msgstr "Edytuj kategorię"
 
 #: library-plugin.php:93
 msgid "Update books category"
-msgstr ""
+msgstr "Zaktualizuj kategorię książek"
 
 #: library-plugin.php:94
 msgid "Add New Books category"
-msgstr ""
+msgstr "Dodaj nową kategorię książek"
 
 #: library-plugin.php:95
 msgid "New Books Category Name"
-msgstr ""
+msgstr "Nowa kategoria książek"
 
 #: library-plugin.php:96
 msgid "Books Category"
-msgstr ""
+msgstr "Kategoria książek"
 
 #: library-plugin.php:115
 msgctxt "taxonomy general name"
 msgid "Hashtags"
-msgstr ""
+msgstr "Hashtagi"
 
 #: library-plugin.php:116
 msgctxt "taxonomy singular name"
 msgid "Hashtag"
-msgstr ""
+msgstr "Hashtag"
 
 #: library-plugin.php:117
 msgid "Search Hashtags"
-msgstr ""
+msgstr "Szukaj Hashtagów"
 
 #: library-plugin.php:118
 msgid "Popular Hashtags"
-msgstr ""
+msgstr "Popularne Hashtagi"
 
 #: library-plugin.php:119
 msgid "All Hashtags"
-msgstr ""
+msgstr "Wszystkie Hashtagi"
 
 #: library-plugin.php:122
 msgid "Edit Hashtag"
-msgstr ""
+msgstr "Edytuj Hashtag"
 
 #: library-plugin.php:123
 msgid "Update Hashtag"
-msgstr ""
+msgstr "Aktualizuj Hashtag"
 
 #: library-plugin.php:124
 msgid "Add New Hashtag"
-msgstr ""
+msgstr "Dodaj nowy Hashtag"
 
 #: library-plugin.php:125
 msgid "New Hashtag Name"
-msgstr ""
+msgstr "Nazwa nowego Hashtagu"
 
 #: library-plugin.php:126
 msgid "Separate Hashtag with commas"
-msgstr ""
+msgstr "Oddziel Hashtagi przecinkami"
 
 #: library-plugin.php:127
 msgid "Add or remove Hashtag"
-msgstr ""
+msgstr "Daj lub usuń Hashtag"
 
 #: library-plugin.php:128
 msgid "Choose from the most used Hashtag"
-msgstr ""
+msgstr "Wybierz z najbardziej popularnych Hashtagów"
 
 #: library-plugin.php:129
 msgid "No Hashtag found."
-msgstr ""
+msgstr "Nie znaleziono Hashtaga"
 
 #: library-plugin.php:130
 msgid "Hashtag"
-msgstr ""
+msgstr "Hashtag"
 
 #: library-plugin.php:206
 msgid "Book parameters"
-msgstr ""
+msgstr "Parametry książki"
 
 #: library-plugin.php:238 templates/single-book-template.php:102
 msgid "ISBN"
-msgstr ""
+msgstr "ISBN"
 
 #: library-plugin.php:241 templates/single-book-template.php:103
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: library-plugin.php:244 templates/single-book-template.php:104
 msgid "Publishing house"
-msgstr ""
+msgstr "Wydawnictwo"
 
 #: library-plugin.php:247 templates/single-book-template.php:105
 msgid "Series"
-msgstr ""
+msgstr "Seria"
 
 #: library-plugin.php:250 templates/single-book-template.php:106
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: library-plugin.php:253 templates/single-book-template.php:107
 msgid "Publication date"
-msgstr ""
+msgstr "Data publikacji"
 
 #: library-plugin.php:256
 msgid "Pages"
-msgstr ""
+msgstr "Ilość stron"
 
 #: library-plugin.php:259 templates/single-book-template.php:109
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: library-plugin.php:262 templates/category-book-template.php:46
 #: templates/hashtags-book-template.php:46
@@ -294,58 +294,58 @@ msgstr ""
 #: templates/single-book-template.php:110
 #: templates/single-book-template.php:153
 msgid "Available"
-msgstr ""
+msgstr "Dostępność"
 
 #: templates/category-book-template.php:5
 msgid "Book category"
-msgstr ""
+msgstr "Kategoria książki"
 
 #: templates/category-book-template.php:48
 #: templates/hashtags-book-template.php:48
 #: templates/single-book-template.php:99
 msgid "Not available"
-msgstr ""
+msgstr "Nie dostępna"
 
 #: templates/category-book-template.php:60
 #: templates/hashtags-book-template.php:60
 msgid "pages"
-msgstr ""
+msgstr "stron"
 
 #: templates/category-book-template.php:75
 #: templates/hashtags-book-template.php:75
 msgid "Read more"
-msgstr ""
+msgstr "Zobacz więcej"
 
 #: templates/category-book-template.php:82
 #: templates/hashtags-book-template.php:82
 msgid "Older books"
-msgstr ""
+msgstr "Starsze książki"
 
 #: templates/category-book-template.php:83
 #: templates/hashtags-book-template.php:83
 msgid "Newer books"
-msgstr ""
+msgstr "Nowsze książki"
 
 #: templates/hashtags-book-template.php:5
 msgid "Book hashtag"
-msgstr ""
+msgstr "Hashtag ksiązki"
 
 #: templates/single-book-template.php:19
 msgid "Books Categories"
-msgstr ""
+msgstr "Kategorie książki"
 
 #: templates/single-book-template.php:35
 msgid "Book have no category"
-msgstr ""
+msgstr "Książka nie ma kategorii"
 
 #: templates/single-book-template.php:44
 msgid "Hashtags"
-msgstr ""
+msgstr "Hashtagi"
 
 #: templates/single-book-template.php:60
 msgid "Book have no hashtags"
-msgstr ""
+msgstr "Książka nie ma hashtagów"
 
 #: templates/single-book-template.php:108
 msgid "Number of pages"
-msgstr ""
+msgstr "Liczba stron"

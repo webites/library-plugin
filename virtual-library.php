@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Library Plugin for WP
+ * Plugin Name:       Virtual Library
  * Plugin URI:        https://webites.pl/library-plugin
  * Description:       Plugin develop Wordpress and making from your site virtual library.
  * Version:           1.1.1

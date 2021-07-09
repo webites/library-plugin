@@ -7,7 +7,7 @@ $categoryName = get_queried_object()->name;
 
 ?>
 <article>
-<h1 class="lpfw_header1"><?php echo $title . ': ' . $categoryName; ?></h1>
+<h1 class="lpfw_header1"><?php echo esc_html($title . ': ' . $categoryName); ?></h1>
 
 
 <div class="lpfw_archive_list">
@@ -68,7 +68,7 @@ if ( have_posts() ) :
                             <?php echo(esc_html( $series )); ?>
                             </div>
                             <div>
-                            <?php echo(esc_html( $pages )) . ' ' . $pagesWord; ?>
+                            <?php echo(esc_html( $pages ) . ' ' . $pagesWord); ?>
                             </div>
                     </div>
 
