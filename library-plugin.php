@@ -5,7 +5,7 @@
  * Description:       Plugin develop Wordpress and making from your site virtual library.
  * Version:           1.1.1
  * Requires at least: 5.7.2
- * Requires PHP:      7.4
+ * Requires PHP:      7.2
  * Author:            weBites
  * Author URI:        https://webites.pl
  * License:           GPL v2 or later
@@ -153,6 +153,7 @@ add_action( 'init', 'lpfw_register_taxonomy_of_books', 0 );
 // PLUGIN TEMPLATES
 
 // single post - book - template
+
 
 
 add_filter( 'single_template', 'lpfw_single_book_page_template' );

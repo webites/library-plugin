@@ -11,7 +11,7 @@ $excerpt = substr($excerpt, 0, 100);
 $excerpt .= '...';
 
 ?>
-
+<article>
 <h1 class="lpfw_header1"><?php echo $title; ?></h1>
 
 <div class="lpfw_books_categories_block">
@@ -185,13 +185,7 @@ $excerpt .= '...';
 
         </div>
 
-
+        </article>
         <?php
-    
-
-
-
-
-
-
+   
 get_footer();

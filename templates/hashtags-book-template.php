@@ -6,7 +6,7 @@ $title = __('Book hashtag', 'library-plugin');
 $hashName = get_queried_object()->name; 
 
 ?>
-
+</article>
 <h1 class="lpfw_header1"><?php echo $title . ': #' . $hashName; ?></h1>
 
 
@@ -91,6 +91,7 @@ if ( have_posts() ) :
     endif;
 ?>
 </div>
+</article>
 
 
 <?php

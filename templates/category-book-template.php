@@ -6,7 +6,7 @@ $title = __('Book category', 'library-plugin');
 $categoryName = get_queried_object()->name; 
 
 ?>
-
+<article>
 <h1 class="lpfw_header1"><?php echo $title . ': ' . $categoryName; ?></h1>
 
 
@@ -92,6 +92,6 @@ if ( have_posts() ) :
 ?>
 </div>
 
-
+</article>
 <?php
 get_footer();
