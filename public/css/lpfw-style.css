@@ -1,0 +1,126 @@
+.lpfw_header1{
+    text-align: center;
+}
+
+.lpfw_single_excerpt{
+
+}
+
+.lpfw_single_excerpt p{
+    text-align: center;
+}
+
+.lpfw_table_of_parameters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: auto;
+
+}
+
+.lpfw_books_categories_block h3,
+.lpfw_books_hashtags_block h3{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.lpfw_books_categories,
+.lpfw_books_hashtags{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.lpfw_single_button{
+    margin: 1rem 2rem;
+}
+
+
+.lpfw_table_of_parameters_single{
+    width: 190px;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 1rem;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0 0 1rem 1px rgba(0,0,0, .4);
+}
+
+.lpfw_table_of_parameters_single_bigger{
+    font-size: larger;
+    margin-top: .4rem;
+    font-weight: 700;
+    display: block;
+}
+
+.lpfw_block_available_left_icon{
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.lpfw_block_available_left_icon_not_available{
+    fill: #c71d0e;
+}
+
+.lpfw_block_available_left_icon_available{
+    fill: #03fc17;
+}
+
+.lpfw_block_available{
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+
+.lpfw_block_available_right{
+    font-size: larger;
+    padding: 2rem 1rem;
+    
+}
+
+.lpfw_block_description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+
+.lpfw_block_description_image{
+    
+    padding: 1rem 2rem;
+    display: block;
+    margin: auto;
+}
+
+.lpfw_block_description_image img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.lpfw_block_description_text{
+    
+    padding: 3rem;
+    font-size: larger;
+    text-align: justify;
+}
