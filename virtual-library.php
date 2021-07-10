@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Virtual Library
- * Plugin URI:        https://webites.pl/library-plugin
+ * Plugin URI:        https://webites.pl/virtual-library
  * Description:       Plugin develop Wordpress and making from your site virtual library.
  * Version:           1.1.1
  * Requires at least: 5.7.2
@@ -10,7 +10,7 @@
  * Author URI:        https://webites.pl
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       library-plugin
+ * Text Domain:       virtual-library
  * Domain Path:       /languages
  */
 
@@ -28,30 +28,30 @@ add_action('wp_enqueue_scripts', 'lpfw_plugin_add_style', PHP_INT_MAX);
 
  function lpfw_register_custom_post_type_book() {
     $labels = array(
-        'name'                  => _x( 'Books', 'Post type general name', 'library-plug' ),
-        'singular_name'         => _x( 'Book', 'Post type singular name', 'library-plugin' ),
-        'menu_name'             => _x( 'Books', 'Admin Menu text', 'library-plugin' ),
-        'name_admin_bar'        => _x( 'Book', 'Add New on Toolbar', 'library-plugin' ),
-        'add_new'               => __( 'Add New', 'library-plugin' ),
-        'add_new_item'          => __( 'Add New Book', 'library-plugin' ),
-        'new_item'              => __( 'New Book', 'library-plugin' ),
-        'edit_item'             => __( 'Edit Book', 'library-plugin' ),
-        'view_item'             => __( 'View Book', 'library-plugin' ),
-        'all_items'             => __( 'All Books', 'library-plugin' ),
-        'search_items'          => __( 'Search Books', 'library-plugin' ),
-        'parent_item_colon'     => __( 'Parent Books:', 'library-plugin' ),
-        'not_found'             => __( 'No books found.', 'library-plugin' ),
-        'not_found_in_trash'    => __( 'No books found in Trash.', 'library-plugin' ),
-        'featured_image'        => _x( 'Book Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'library-plugin' ),
-        'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'library-plugin' ),
-        'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'library-plugin' ),
-        'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'library-plugin' ),
-        'archives'              => _x( 'Book archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'library-plugin' ),
-        'insert_into_item'      => _x( 'Insert into book', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'library-plugin' ),
-        'uploaded_to_this_item' => _x( 'Uploaded to this book', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'library-plugin' ),
-        'filter_items_list'     => _x( 'Filter books list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'library-plugin' ),
-        'items_list_navigation' => _x( 'Books list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'library-plugin' ),
-        'items_list'            => _x( 'Books list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'library-plugin' ),
+        'name'                  => _x( 'Books', 'Post type general name', 'virtual-library' ),
+        'singular_name'         => _x( 'Book', 'Post type singular name', 'virtual-library' ),
+        'menu_name'             => _x( 'Books', 'Admin Menu text', 'virtual-library' ),
+        'name_admin_bar'        => _x( 'Book', 'Add New on Toolbar', 'virtual-library' ),
+        'add_new'               => __( 'Add New', 'virtual-library' ),
+        'add_new_item'          => __( 'Add New Book', 'virtual-library' ),
+        'new_item'              => __( 'New Book', 'virtual-library' ),
+        'edit_item'             => __( 'Edit Book', 'virtual-library' ),
+        'view_item'             => __( 'View Book', 'virtual-library' ),
+        'all_items'             => __( 'All Books', 'virtual-library' ),
+        'search_items'          => __( 'Search Books', 'virtual-library' ),
+        'parent_item_colon'     => __( 'Parent Books:', 'virtual-library' ),
+        'not_found'             => __( 'No books found.', 'virtual-library' ),
+        'not_found_in_trash'    => __( 'No books found in Trash.', 'virtual-library' ),
+        'featured_image'        => _x( 'Book Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'virtual-library' ),
+        'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'virtual-library' ),
+        'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'virtual-library' ),
+        'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'virtual-library' ),
+        'archives'              => _x( 'Book archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'virtual-library' ),
+        'insert_into_item'      => _x( 'Insert into book', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'virtual-library' ),
+        'uploaded_to_this_item' => _x( 'Uploaded to this book', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'virtual-library' ),
+        'filter_items_list'     => _x( 'Filter books list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'virtual-library' ),
+        'items_list_navigation' => _x( 'Books list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'virtual-library' ),
+        'items_list'            => _x( 'Books list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'virtual-library' ),
     );
  
     $args = array(
@@ -83,17 +83,17 @@ add_action( 'init', 'lpfw_register_custom_post_type_book' );
 function lpfw_register_taxonomy_of_books() {
     // Add new taxonomy, make it hierarchical (like categories)
     $labels = array(
-        'name'              => _x( 'Books categories', 'taxonomy general name', 'library-plugin' ),
-        'singular_name'     => _x( 'Books category', 'taxonomy singular name', 'library-plugin' ),
-        'search_items'      => __( 'Search books Categories', 'library-plugin' ),
-        'all_items'         => __( 'All books Categories', 'library-plugin' ),
-        'parent_item'       => __( 'Parent books category', 'library-plugin' ),
-        'parent_item_colon' => __( 'Parent books Category:', 'library-plugin' ),
-        'edit_item'         => __( 'Edit books category', 'library-plugin' ),
-        'update_item'       => __( 'Update books category', 'library-plugin' ),
-        'add_new_item'      => __( 'Add New Books category', 'library-plugin' ),
-        'new_item_name'     => __( 'New Books Category Name', 'library-plugin' ),
-        'menu_name'         => __( 'Books Category', 'library-plugin' ),
+        'name'              => _x( 'Books categories', 'taxonomy general name', 'virtual-library' ),
+        'singular_name'     => _x( 'Books category', 'taxonomy singular name', 'virtual-library' ),
+        'search_items'      => __( 'Search books Categories', 'virtual-library' ),
+        'all_items'         => __( 'All books Categories', 'virtual-library' ),
+        'parent_item'       => __( 'Parent books category', 'virtual-library' ),
+        'parent_item_colon' => __( 'Parent books Category:', 'virtual-library' ),
+        'edit_item'         => __( 'Edit books category', 'virtual-library' ),
+        'update_item'       => __( 'Update books category', 'virtual-library' ),
+        'add_new_item'      => __( 'Add New Books category', 'virtual-library' ),
+        'new_item_name'     => __( 'New Books Category Name', 'virtual-library' ),
+        'menu_name'         => __( 'Books Category', 'virtual-library' ),
     );
  
     $args = array(
@@ -112,22 +112,22 @@ function lpfw_register_taxonomy_of_books() {
 
      // Add new taxonomy, NOT hierarchical (like tags)
      $labels = array(
-        'name'                       => _x( 'Hashtags', 'taxonomy general name', 'library-plugin' ),
-        'singular_name'              => _x( 'Hashtag', 'taxonomy singular name', 'library-plugin' ),
-        'search_items'               => __( 'Search Hashtags', 'library-plugin' ),
-        'popular_items'              => __( 'Popular Hashtags', 'library-plugin' ),
-        'all_items'                  => __( 'All Hashtags', 'library-plugin' ),
+        'name'                       => _x( 'Hashtags', 'taxonomy general name', 'virtual-library' ),
+        'singular_name'              => _x( 'Hashtag', 'taxonomy singular name', 'virtual-library' ),
+        'search_items'               => __( 'Search Hashtags', 'virtual-library' ),
+        'popular_items'              => __( 'Popular Hashtags', 'virtual-library' ),
+        'all_items'                  => __( 'All Hashtags', 'virtual-library' ),
         'parent_item'                => null,
         'parent_item_colon'          => null,
-        'edit_item'                  => __( 'Edit Hashtag', 'library-plugin' ),
-        'update_item'                => __( 'Update Hashtag', 'textvirtual-visit-in-librarydomain' ),
-        'add_new_item'               => __( 'Add New Hashtag', 'library-plugin' ),
-        'new_item_name'              => __( 'New Hashtag Name', 'library-plugin' ),
-        'separate_items_with_commas' => __( 'Separate Hashtag with commas', 'library-plugin' ),
-        'add_or_remove_items'        => __( 'Add or remove Hashtag', 'library-plugin' ),
-        'choose_from_most_used'      => __( 'Choose from the most used Hashtag', 'library-plugin' ),
-        'not_found'                  => __( 'No Hashtag found.', 'library-plugin' ),
-        'menu_name'                  => __( 'Hashtag', 'library-plugin' ),
+        'edit_item'                  => __( 'Edit Hashtag', 'virtual-library' ),
+        'update_item'                => __( 'Update Hashtag', 'virtual-library' ),
+        'add_new_item'               => __( 'Add New Hashtag', 'virtual-library' ),
+        'new_item_name'              => __( 'New Hashtag Name', 'virtual-library' ),
+        'separate_items_with_commas' => __( 'Separate Hashtag with commas', 'virtual-library' ),
+        'add_or_remove_items'        => __( 'Add or remove Hashtag', 'virtual-library' ),
+        'choose_from_most_used'      => __( 'Choose from the most used Hashtag', 'virtual-library' ),
+        'not_found'                  => __( 'No Hashtag found.', 'virtual-library' ),
+        'menu_name'                  => __( 'Hashtag', 'virtual-library' ),
     );
  
     $args = array(
@@ -235,31 +235,31 @@ function lpfw_display_table_with_options( $post ) {
     <div class="wrap">
     <form action="/" method="post">
 
-        <label for="lpfw_book_isbn"><?php _e( 'ISBN', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_isbn"><?php _e( 'ISBN', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_isbn" name="lpfw_book_isbn" value="<?php echo $isbn; ?>"><BR><BR>
 
-        <label for="lpfw_book_author"><?php _e( 'Author', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_author"><?php _e( 'Author', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_author" name="lpfw_book_author" value="<?php echo $author; ?>"><BR><BR>
         
-        <label for="lpfw_book_publishing_house"><?php _e( 'Publishing house', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_publishing_house"><?php _e( 'Publishing house', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_publishing_house" name="lpfw_book_publishing_house" value="<?php echo $publishing_house; ?>"><BR><BR>
 
-        <label for="lpfw_book_series"><?php _e( 'Series', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_series"><?php _e( 'Series', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_series" name="lpfw_book_series" value="<?php echo $series; ?>"><BR><BR>
 
-        <label for="lpfw_book_type"><?php _e( 'Type', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_type"><?php _e( 'Type', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_type" name="lpfw_book_type" value="<?php echo $type; ?>"><BR><BR>
         
-        <label for="lpfw_book_publication_date"><?php _e( 'Publication date', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_publication_date"><?php _e( 'Publication date', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_publication_date" name="lpfw_book_publication_date" value="<?php echo $publication_date; ?>"><BR><BR>
         
-        <label for="lpfw_book_pages"><?php _e( 'Pages', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_pages"><?php _e( 'Pages', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_pages" name="lpfw_book_pages" value="<?php echo $pages; ?>"><BR><BR>
         
-        <label for="lpfw_book_format"><?php _e( 'Format', 'library-plugin'); ?></label><BR>
+        <label for="lpfw_book_format"><?php _e( 'Format', 'virtual-library'); ?></label><BR>
         <input type="text" id="lpfw_book_format" name="lpfw_book_format" value="<?php echo $format; ?>"><BR><BR>
 
-        <label for="lpfw_book_available"><?php _e( 'Available', 'library-plugin'); ?></label>
+        <label for="lpfw_book_available"><?php _e( 'Available', 'virtual-library'); ?></label>
         <input type="checkbox" id="lpfw_book_available" name="lpfw_book_available" <?php if($available) { echo 'CHECKED'; } ?>><BR><BR>
 
 

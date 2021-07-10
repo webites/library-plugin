@@ -16,7 +16,7 @@ $excerpt .= '...';
 
 <div class="lpfw_books_categories_block">
     <h3>
-        <?php _e( 'Books Categories', 'library-plugin') ?>
+        <?php _e( 'Books Categories', 'virtual-library') ?>
     </h3>
     <div class="lpfw_books_categories">
     <?php
@@ -32,7 +32,7 @@ $excerpt .= '...';
             </div>';
         }
     } else {
-        _e ('Book have no category', 'library-plugin');
+        _e ('Book have no category', 'virtual-library');
     }
     ?>
     </div>
@@ -41,7 +41,7 @@ $excerpt .= '...';
 
 <div class="lpfw_books_hashtags_block">
     <h3>
-        <?php _e( 'Hashtags', 'library-plugin') ?>
+        <?php _e( 'Hashtags', 'virtual-library') ?>
     </h3>
     <div class="lpfw_books_hashtags">
     <?php
@@ -57,7 +57,7 @@ $excerpt .= '...';
             </div>';
         }
     } else {
-        _e ('Book have no hashtags', 'library-plugin');
+        _e ('Book have no hashtags', 'virtual-library');
     }
     ?>
     </div>
@@ -94,20 +94,20 @@ $excerpt .= '...';
         $available = get_post_meta( $post->ID, 'lpfw_book_available', true );
 
         if(!empty($available)) {
-            $available = __('Available', 'library-plugin');
+            $available = __('Available', 'virtual-library');
         } else {
-            $available = __('Not available', 'library-plugin');
+            $available = __('Not available', 'virtual-library');
         }
 
-        $e_isbn = __('ISBN', 'library-plugin');
-        $e_author = __('Author', 'library-plugin');
-        $e_publishing_house = __('Publishing house', 'library-plugin');
-        $e_series = __('Series', 'library-plugin');
-        $e_type = __('Type', 'library-plugin');
-        $e_publication_date = __('Publication date', 'library-plugin');
-        $e_pages = __('Number of pages', 'library-plugin');
-        $e_format = __('Format', 'library-plugin');
-        $e_available = __('Available', 'library-plugin');
+        $e_isbn = __('ISBN', 'virtual-library');
+        $e_author = __('Author', 'virtual-library');
+        $e_publishing_house = __('Publishing house', 'virtual-library');
+        $e_series = __('Series', 'virtual-library');
+        $e_type = __('Type', 'virtual-library');
+        $e_publication_date = __('Publication date', 'virtual-library');
+        $e_pages = __('Number of pages', 'virtual-library');
+        $e_format = __('Format', 'virtual-library');
+        $e_available = __('Available', 'virtual-library');
 
         ?>
 
@@ -150,7 +150,7 @@ $excerpt .= '...';
         <div class="lpfw_block_available">
 
             <div class="lpfw_block_available_left">
-                <?php if($available == __('Available', 'library-plugin')) { ?>
+                <?php if($available == __('Available', 'virtual-library')) { ?>
 
                 <svg class="lpfw_block_available_left_icon lpfw_block_available_left_icon_available">
                     <use xlink:href='<?php echo plugin_dir_url( __FILE__ ) ?>public/image/sprite.svg#icon-checkmark'></use>

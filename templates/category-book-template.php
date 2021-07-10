@@ -2,7 +2,7 @@
 
 get_header();
 
-$title = __('Book category', 'library-plugin');
+$title = __('Book category', 'virtual-library');
 $categoryName = get_queried_object()->name; 
 
 ?>
@@ -43,9 +43,9 @@ if ( have_posts() ) :
                       
                         <?php
                            if($available == 'on'){
-                                _e('Available', 'library-plugin');
+                                _e('Available', 'virtual-library');
                             }else{
-                                _e('Not available', 'library-plugin');
+                                _e('Not available', 'virtual-library');
                             }
                         ?>
                     </div>
@@ -57,7 +57,7 @@ if ( have_posts() ) :
                     </p>
 
                     <?php 
-                    $pagesWord = __('pages', 'library-plugin');
+                    $pagesWord = __('pages', 'virtual-library');
                     ?>
 
                     <div class="lpfw_archive_short_details">
@@ -72,15 +72,15 @@ if ( have_posts() ) :
                             </div>
                     </div>
 
-                    <a href="<?php the_permalink(); ?>" class="button"><?php _e('Read more', 'library-pluin'); ?></a>
+                    <a href="<?php the_permalink(); ?>" class="button"><?php _e('Read more', 'virtual-library'); ?></a>
 
                 </div>
             
             </div>
 
             <?php
-            $olderPosts = __('Older books', 'library-plugin');
-            $newerPosts = __('Newer books', 'library-plugin');
+            $olderPosts = __('Older books', 'virtual-library');
+            $newerPosts = __('Newer books', 'virtual-library');
             ?>
             <div class="lpfw_archive_pagination_left nav-previous alignleft"><?php previous_posts_link( $olderPosts ); ?></div>
             <div class="lpfw_archive_pagination_right nav-next alignright"><?php next_posts_link( $newerPosts ); ?></div>
