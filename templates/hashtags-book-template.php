@@ -7,7 +7,7 @@ $hashName = get_queried_object()->name;
 
 ?>
 </article>
-<h1 class="lpfw_header1"><?php echo $title . ': #' . $hashName; ?></h1>
+<h1 class="lpfw_header1"><?php echo esc_html($title) . ': #' . esc_html($hashName) ?></h1>
 
 
 <div class="lpfw_archive_list">

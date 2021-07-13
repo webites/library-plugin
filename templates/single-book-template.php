@@ -175,11 +175,11 @@ $excerpt .= '...';
 
         <div class="lpfw_block_description_image">
             <?php $thumbnail = get_the_post_thumbnail_url(); ?>
-            <img src="<?php echo $thumbnail; ?>" alt="<?php echo get_the_title(); ?>">
+            <img src="<?php echo $thumbnail; ?>" alt="<?php echo esc_html(get_the_title()); ?>">
         </div>
 
         <div class="lpfw_block_description_text">
-        <?php echo get_the_content('', '', $post->ID); ?> 
+        <?php echo esc_html(get_the_content('', '', $post->ID)); ?> 
         </div>
         
 

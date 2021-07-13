@@ -236,28 +236,28 @@ function lpfw_display_table_with_options( $post ) {
     <form action="/" method="post">
 
         <label for="lpfw_book_isbn"><?php _e( 'ISBN', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_isbn" name="lpfw_book_isbn" value="<?php echo $isbn; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_isbn" name="lpfw_book_isbn" value="<?php echo esc_html($isbn); ?>"><BR><BR>
 
         <label for="lpfw_book_author"><?php _e( 'Author', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_author" name="lpfw_book_author" value="<?php echo $author; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_author" name="lpfw_book_author" value="<?php echo esc_html($author); ?>"><BR><BR>
         
         <label for="lpfw_book_publishing_house"><?php _e( 'Publishing house', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_publishing_house" name="lpfw_book_publishing_house" value="<?php echo $publishing_house; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_publishing_house" name="lpfw_book_publishing_house" value="<?php echo esc_html($publishing_house); ?>"><BR><BR>
 
         <label for="lpfw_book_series"><?php _e( 'Series', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_series" name="lpfw_book_series" value="<?php echo $series; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_series" name="lpfw_book_series" value="<?php echo esc_html($series); ?>"><BR><BR>
 
         <label for="lpfw_book_type"><?php _e( 'Type', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_type" name="lpfw_book_type" value="<?php echo $type; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_type" name="lpfw_book_type" value="<?php echo esc_html($type); ?>"><BR><BR>
         
         <label for="lpfw_book_publication_date"><?php _e( 'Publication date', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_publication_date" name="lpfw_book_publication_date" value="<?php echo $publication_date; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_publication_date" name="lpfw_book_publication_date" value="<?php echo esc_html($publication_date); ?>"><BR><BR>
         
         <label for="lpfw_book_pages"><?php _e( 'Pages', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_pages" name="lpfw_book_pages" value="<?php echo $pages; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_pages" name="lpfw_book_pages" value="<?php echo esc_html($pages); ?>"><BR><BR>
         
         <label for="lpfw_book_format"><?php _e( 'Format', 'virtual-library'); ?></label><BR>
-        <input type="text" id="lpfw_book_format" name="lpfw_book_format" value="<?php echo $format; ?>"><BR><BR>
+        <input type="text" id="lpfw_book_format" name="lpfw_book_format" value="<?php echo esc_html($format); ?>"><BR><BR>
 
         <label for="lpfw_book_available"><?php _e( 'Available', 'virtual-library'); ?></label>
         <input type="checkbox" id="lpfw_book_available" name="lpfw_book_available" <?php if($available) { echo 'CHECKED'; } ?>><BR><BR>
