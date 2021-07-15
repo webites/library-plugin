@@ -4,7 +4,7 @@
  * Plugin URI:        https://webites.pl/virtual-library
  * Description:       Plugin develop Wordpress and making from your site virtual library.
  * Version:           1.1.1
- * Requires at least: 5.7.2
+ * Requires at least: 5.3.4
  * Requires PHP:      7.2
  * Author:            weBites
  * Author URI:        https://webites.pl

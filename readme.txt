@@ -35,34 +35,36 @@ You can categorised books with this taxonomies and display archives of categorie
 * hashtag page
 
 ## The plugin work with all themes.
+Every themes will display books, categories and hashtags.
 
 == Installation ==
  
 This section describes how to install the plugin and get it working.
  
-## Simplest:
+Simplest:
 
 1. Run your Wordpress
 2. Plugins -> Add New
-3. Search Plugin: **weBites Currency**
+3. Search Plugin: **Virtual Library**
 4. Click **Install Now**
 5. After Install click **Activate**
 
-## Manual:
+Manual:
 
 1. Download .zip file
 2. Plugins -> Add New
 3. Upload Plugin 
 4. After Install click **Activate**
 
-## **Very Important!**
+Very Important!
 
 After installation you must make this action:
+
 * Settings
 * Permialinks
 * Save changes
 
-### This action is important because resets all permalinks.
+This action is important because resets all permalinks.
 
 
 
@@ -74,6 +76,7 @@ You can set display, for example, books categories to main menu. It's good metho
 because peoples who will  explore your site easy can have an access to categories and hashtags.
 You can add single book too.
 If you want add something to main menu you must go to
+
 * Apperance
 * Menus
 * And if you don't see 'Books Category', 'Books', Books Hashtags' you must click Screeen 
