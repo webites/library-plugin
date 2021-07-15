@@ -3,7 +3,7 @@ Contributors: lgolabek
 Donate link: https://www.buymeacoffee.com/lgolabek
 Tags: library, books list, virtual library, book information
 Tested up to: 5.7.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 
 
 Plugin for library. Displays books which is in library.
@@ -36,6 +36,14 @@ You can categorised books with this taxonomies and display archives of categorie
 
 ## The plugin work with all themes.
 Every themes will display books, categories and hashtags.
+
+## Hooks
+
+### Actions:
+* lpfw_single_book_after_title - under title in single book
+* lpfw_single_book_before_parameters - before book parameters in single book
+* lpfw_single_book_before_description - before description in single book
+* lpfw_single_book_after_description - after description in single book
 
 == Installation ==
  
@@ -102,6 +110,11 @@ It's job for developers. Write us we will make it together!
 
 == Changelog ==
  
+= 1.2.1
+
+* Added 4 adctions
+* Added informations about developing plugins for custom needs
+
 = 1.1.1
 
 First version

@@ -61,15 +61,21 @@ if ( have_posts() ) :
                     ?>
 
                     <div class="lpfw_archive_short_details">
-                            <div>
-                            <?php echo(esc_html( $author )); ?>
-                            </div>
-                            <div>
-                            <?php echo(esc_html( $series )); ?>
-                            </div>
-                            <div>
-                            <?php echo(esc_html( $pages )) . ' ' . $pagesWord; ?>
-                            </div>
+
+                                <?php if( !empty($author)) {
+                                    echo '<div>' . (esc_html( $author )) . '</div>';
+                                    }
+                                ?>
+                                
+                                <?php if( !empty($series)) {
+                                    echo '<div>' . (esc_html( $series )) . '</div>';
+                                    }
+                                ?>
+
+                                <?php if( !empty($pages)) {
+                                    echo '<div>' . (esc_html( $pages ) . ' ' . $pagesWord) . '</div>';
+                                    }
+                                ?>
                     </div>
 
                     <a href="<?php the_permalink(); ?>" class="button"><?php _e('Read more', 'virtual-library'); ?></a>

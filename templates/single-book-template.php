@@ -14,6 +14,8 @@ $excerpt .= '...';
 <article>
 <h1 class="lpfw_header1"><?php echo esc_html($title); ?></h1>
 
+<?php do_action( 'lpfw_single_book_after_title'); ?>
+
 <div class="lpfw_books_categories_block">
     <h3>
         <?php _e( 'Books Categories', 'virtual-library') ?>
@@ -77,6 +79,8 @@ $excerpt .= '...';
         <?php
     }
     ?>
+
+<?php do_action( 'lpfw_single_book_before_parameters'); ?>
 
         <div class="lpfw_table_of_parameters">
 
@@ -171,6 +175,8 @@ $excerpt .= '...';
 
         </div>
 
+        <?php do_action( 'lpfw_single_book_before_description'); ?>
+
         <div class="lpfw_block_description">
 
         <div class="lpfw_block_description_image">
@@ -184,6 +190,9 @@ $excerpt .= '...';
         
 
         </div>
+
+        <?php do_action( 'lpfw_single_book_after_description'); ?>
+
 
         </article>
         <?php

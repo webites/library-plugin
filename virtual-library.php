@@ -3,7 +3,7 @@
  * Plugin Name:       Virtual Library
  * Plugin URI:        https://webites.pl/virtual-library
  * Description:       Plugin develop Wordpress and making from your site virtual library.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Requires at least: 5.3.4
  * Requires PHP:      7.2
  * Author:            weBites
@@ -14,8 +14,35 @@
  * Domain Path:       /languages
  */
 
-// add plugin styles
+
+//add premium message
+
+function lpfw_check_premium_message(){
+    
+    ?>
+    <div id='setting-error-tgmpa' class='notice notice-warning settings-error is-dismissible'> 
+
+    <p><strong>
+        <span>
+        <h3><?php _e('Virtual Library - To little options?', 'virtual-library'); ?></h3>
+            </span>
+            <p>
+                <?php _e('We will develop this plugin for your needs. Your customers will can be explore your site easier.', 'library-plugin'); ?>
+            </p>
+
+            <span>
+            <a href="https://webites.pl"><?php _e('Write us!', 'library-plugin'); ?></a> 
+        </a></span>
+
+        </strong></p>
+    </div> 
+    <?php
+}
+
+add_action( 'admin_notices', 'lpfw_check_premium_message');
  
+
+// add plugin styles
 function lpfw_plugin_add_style()
 {
     $dir = plugin_dir_url(__FILE__);
