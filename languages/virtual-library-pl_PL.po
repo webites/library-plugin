@@ -35,7 +35,7 @@ msgstr "Książka"
 #: virtual-library.php:33
 msgctxt "Admin Menu text"
 msgid "Books"
-msgstr "Książka"
+msgstr "Książki"
 
 #: virtual-library.php:34
 msgctxt "Add New on Toolbar"
@@ -294,7 +294,7 @@ msgstr "Format"
 #: templates/single-book-template.php:110
 #: templates/single-book-template.php:153
 msgid "Available"
-msgstr "Dostępność"
+msgstr "Dostępna"
 
 #: templates/category-book-template.php:5
 msgid "Book category"
@@ -304,7 +304,7 @@ msgstr "Kategoria książki"
 #: templates/hashtags-book-template.php:48
 #: templates/single-book-template.php:99
 msgid "Not available"
-msgstr "Nie dostępna"
+msgstr "Niedostępna"
 
 #: templates/category-book-template.php:60
 #: templates/hashtags-book-template.php:60
