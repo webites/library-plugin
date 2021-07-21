@@ -2,7 +2,7 @@
 Contributors: lgolabek
 Donate link: https://www.buymeacoffee.com/lgolabek
 Tags: library, books list, virtual library, book information
-Tested up to: 5.7.3
+Tested up to: 5.8
 Stable tag: 1.1.3
 License: GPLv2 
 
