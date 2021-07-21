@@ -3,7 +3,7 @@
  * Plugin Name:       Virtual Library
  * Plugin URI:        https://webites.pl/virtual-library
  * Description:       Plugin develop Wordpress and making from your site virtual library.
- * Version:           1.1.2
+ * Version:           1.1.3
  * Requires at least: 5.3.4
  * Requires PHP:      7.2
  * Author:            weBites

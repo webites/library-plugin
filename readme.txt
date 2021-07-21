@@ -2,8 +2,8 @@
 Contributors: lgolabek
 Donate link: https://www.buymeacoffee.com/lgolabek
 Tags: library, books list, virtual library, book information
-Tested up to: 5.7.2
-Stable tag: 1.1.2
+Tested up to: 5.7.3
+Stable tag: 1.1.3
 License: GPLv2 
 
 Plugin for library. Displays books which is in library.
@@ -109,10 +109,14 @@ It's job for developers. Write us we will make it together!
 2. Display Single Book (theme: Go)
 
 == Changelog ==
- 
-= 1.2.1
 
-* Added 4 adctions
+= 1.1.3
+
+* Upgraded plugin to WordPress version 5.8
+
+= 1.1.2
+
+* Added 4 actions
 * Added informations about developing plugins for custom needs
 
 = 1.1.1
